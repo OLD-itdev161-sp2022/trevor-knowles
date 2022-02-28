@@ -5,6 +5,8 @@ import connectDatabase from './config/db';
 import {check, validationResult } from 'express-validator';
 import cors from 'cors';
 import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import config from 'config';
 import User from './models/User';
 
 // Initialize express application
